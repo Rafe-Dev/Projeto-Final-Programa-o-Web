@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LDE STORE - Gabinete Gamer</title>
+    <link href="css/Produtos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=home" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  </head>
+  <body>
+    <header>
+      <div class="top-bar">
+        <div class="logo">
+          <img src="imagens/logo1.png" alt="LDE STORE LOGO" height="60">
+          <h1>LDE</h1>
+        </div>
+          <nav class="nav">
+         <nav class="menu">
+                <a href="projeto.html"><span class="material-symbols-outlined">
+home
+</span></a>
+                <a href="login.html"><span class="material-symbols-outlined">account_circle</span></a>
+                <a href="carrinho.html"><span class="material-symbols-outlined">shopping_cart</span></a>
+        </nav>      
+      </div>
+    </header>
+    <main class="container">
+      <div class="product-details">
+        <div class="product-gallery">
+          <img src="imagens/imgprodutos/Gabineteprod4.png" alt="Gabinete Gamer" />     
+        </div>
+        <div class="product-info">
+          <p class="product-path">
+            <i class="fas fa-chevron-right"></i> Tecnologia / Gabinetes
+          </p>
+          <h2>Gabiente Gamer - Preto</h2>
+          <p class="product-code">Código do Produto: 98645XYZ</p>
+          <p class="price">R$ 649,90</p>
+          <p class="preco_desconto">Por R$ 454,90</p>
+          <p class="rating">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i
+            ><i class="fas fa-star"></i><i class="fas fa-star"></i
+            ><i class="fas fa-star"></i> 90 avaliações
+          </p>
+          <p class="product-description">
+            Transforme seu setup gamer com o Gabinete Gamer Liketec Zeus Pro Glass Black ATX Preto. Este gabinete foi projetado para gamers que buscam um design sofisticado e um desempenho térmico otimizado. Com um painel lateral de vidro temperado, o Zeus Pro Glass Black oferece uma visão clara do interior, permitindo exibir seus componentes e iluminação RGB com estilo. É a escolha ideal para quem deseja um gabinete robusto e esteticamente impactante.
+          </p>
+          <div class="product-options">
+            </select>
+            <label for="quantity">Quantidade:</label>
+            <input type="number" id="quantity" value="1" />
+          </div>
+          <div class="buttons" onclick="event.stopPropagation(); location.href='carrinho.html'">
+            <button class="add-to-cart">
+              <i class="fas fa-shopping-cart"></i> Adicionar ao carrinho
+            </button>         
+          </div>
+          <p class="delivery">
+            <i class="fas fa-truck"></i> Estimativa de Entrega: Consulte nossos
+            Termos e Condições
+          </p>
+        </div>
+      </div>
+      <div class="product-specs">
+        <ul class="tabs">
+          <li><i class="fas fa-info-circle"></i> Detalhes</li>
+          <li><i class="fas fa-undo"></i> Devolução</li>
+          <li><i class="fas fa-shipping-fast"></i> Entrega</li>
+        </ul>
+        <div class="specs-content">
+          <div>
+            <p><strong>SKU:</strong> TECH98765</p>
+            <p><strong>Painel Lateral:</strong> Vidro Temperado</p>
+            <p><strong>Espaço interno amplo:</strong> Suporta placas-mãe ATX, micro-ATX e mini-ITX, além de placas de vídeo de grande porte e soluções de resfriamento variadas.</p>
+            <p><strong>Flexibilidade e resfriamento:</strong> Vem sem fans, permitindo que você personalize o sistema de resfriamento conforme suas necessidades, seja com fans ou radiadores.</p>
+            <p><strong>Gestão de cabos eficiente:</strong> Design inteligente para facilitar o gerenciamento de cabos, mantendo o interior limpo e com boa circulação de ar.</p>
+            <p><strong>Amplo suporte para armazenamento:</strong> Múltiplas baias para SSDs e HDDs, garantindo todo o espaço necessário para seus jogos e arquivos importantes.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
