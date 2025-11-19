@@ -1,6 +1,8 @@
 # Projeto-Final-Programa-o-Web
 
-NOSSO PROJETO VAI CONSISTIR NUMA PÁGINA DE COMPRA DE PRODUTOS ELETRÔNICOS 
+🧩 Projeto — Loja de produtos eletrônicos 
+
+Status: Em desenvolvimento
 
 INTEGRANTES DA EQUIPE:
 
