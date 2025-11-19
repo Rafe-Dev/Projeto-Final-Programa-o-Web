@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f5f7fa;
+    color: hsl(218, 100%, 11%);
+}
+
+header {
+    background: linear-gradient(to right, #001538, #2575fc);
+    padding: 15px 30px;
+    color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.center {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu {
+    width: 50%;
+    text-align: right;
+    color: rgb(177, 12, 12);
+    background-color: aliceblue;
+}
+
