@@ -1,6 +1,7 @@
 # Projeto-Final-Programa-o-Web
 
 🧩 Projeto — Loja de produtos eletrônicos 
+
 Status: Em desenvolvimento
 
 INTEGRANTES DA EQUIPE:
