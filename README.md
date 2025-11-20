@@ -2,7 +2,9 @@
 
 🧩 Projeto — Loja de produtos eletrônicos 
 
-Status: Em desenvolvimento
+<img width="172" height="20" alt="image" src="https://github.com/user-attachments/assets/51d90e02-9318-4ba9-8581-2b985d6dbc97" />
+
+
 
 INTEGRANTES DA EQUIPE:
 
