@@ -1,28 +1,3 @@
-<?php
-// carrinho.php
-session_start();
-require_once "conexao.php";
-
-if (!isset($_SESSION['usuario_id'])) {
-    header("Location: login.php");
-    exit;
-}
-
-$usuario_id = (int) $_SESSION['usuario_id'];
-
-// Busca itens do carrinho junto com dados do produto
-$sql = "SELECT c.produto_id, c.quantidade, p.nome, p.imagem, p.preco AS preco_produto
-        FROM carrinho c
-        JOIN produtos p ON p.id = c.produto_id
-        WHERE c.usuario_id = ?";
-$stmt = mysqli_prepare($conexao, $sql);
-mysqli_stmt_bind_param($stmt, "i", $usuario_id);
-mysqli_stmt_execute($stmt);
-$res = mysqli_stmt_get_result($stmt);
-
-$itens = mysqli_fetch_all($res, MYSQLI_ASSOC);
-mysqli_stmt_close($stmt);
-?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
