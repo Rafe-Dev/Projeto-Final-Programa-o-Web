@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f5f7fa;
+    color: hsl(218, 100%, 11%);
+}
+
+header {
+    background: linear-gradient(to right, #001538, #2575fc);
+    padding: 15px 30px;
+    color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.center {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    border-radius: 10px;
+}
+
+.fundo {
+    display: flex;
+    justify-content: flex-end; /* joga o conteúdo para a direita */
+    align-items: center;       /* centraliza verticalmente */
+    height: calc(100vh - 100px); /* ocupa toda a tela abaixo do header */
+    background-image: url("../contatos/imagens/fundo\ de\ redes.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contato {
+    width: 40%; /* Ajuste como quiser */
+    background-color: rgba(241, 236, 236, 0.938); /* fundo sutil pra destacar o texto */
+    padding: 30px;
+    color: rgb(139, 41, 41);
+    border-radius: 10px;
+}
+
