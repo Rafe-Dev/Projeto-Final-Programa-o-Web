@@ -1,0 +1,126 @@
+<?php
+// carrinho.php
+session_start();
+require_once "conexao.php";
+
+if (!isset($_SESSION['usuario_id'])) {
+    header("Location: login.php");
+    exit;
+}
+
+$usuario_id = (int) $_SESSION['usuario_id'];
+
+// Busca itens do carrinho junto com dados do produto
+$sql = "SELECT c.produto_id, c.quantidade, p.nome, p.imagem, p.preco AS preco_produto
+        FROM carrinho c
+        JOIN produtos p ON p.id = c.produto_id
+        WHERE c.usuario_id = ?";
+$stmt = mysqli_prepare($conexao, $sql);
+mysqli_stmt_bind_param($stmt, "i", $usuario_id);
+mysqli_stmt_execute($stmt);
+$res = mysqli_stmt_get_result($stmt);
+
+$itens = mysqli_fetch_all($res, MYSQLI_ASSOC);
+mysqli_stmt_close($stmt);
+?>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <title>Carrinho - LDE Store</title>
+  <link rel="stylesheet" href="css/carrinho.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <div class="logo"><img src="imagens/logo1.png" alt="Logo" width="70" style="border-radius:10px;"></div>
+    <span style="font-size:26px;">Seu carrinho</span>
+    <nav><a href="projeto.html"><i class="bx bx-home" style="color: white;"></i></a></nav>
+  </header>
+
+  <main>
+    <div class="carrinho">
+      <section>
+        <form action="carrinho_action.php?acao=update&id=0" method="post" id="form-atualiza">
+        <table>
+          <thead>
+            <tr>
+              <th>Produto</th>
+              <th>Preço</th>
+              <th>Quantidade</th>
+              <th>Total</th>
+              <th>-</th>
+            </tr>
+          </thead>
+          <tbody>
+            <?php if (count($itens) === 0): ?>
+              <tr><td colspan="5">Seu carrinho está vazio.</td></tr>
+            <?php else: ?>
+              <?php foreach ($itens as $item): 
+                $preco = (float)$item['preco_produto'];
+                $quant = (int)$item['quantidade'];
+                $total = $preco * $quant;
+              ?>
+              <tr data-produto="<?= $item['produto_id'] ?>">
+                <td>
+                  <div class="produto" style="cursor:default;">
+                    <div class="pimagem">
+                      <img src="<?= htmlspecialchars($item['imagem']) ?>" alt="<?= htmlspecialchars($item['nome']) ?>" />
+                    </div>
+                    <div class="descricao"><span><?= htmlspecialchars($item['nome']) ?></span></div>
+                  </div>
+                </td>
+                <td>R$ <?= number_format($preco, 2, ',', '.') ?></td>
+                <td>
+                  <div class="qnt">
+                    <form method="post" action="carrinho_action.php?acao=update&id=<?= $item['produto_id'] ?>" style="display:inline;">
+                      <button type="submit" name="qtd" value="<?= max(1, $quant - 1) ?>" class="menos">-</button>
+                    </form>
+                    <span><?= $quant ?></span>
+                    <form method="post" action="carrinho_action.php?acao=update&id=<?= $item['produto_id'] ?>" style="display:inline;">
+                      <button type="submit" name="qtd" value="<?= $quant + 1 ?>" class="mais">+</button>
+                    </form>
+                  </div>
+                </td>
+                <td>R$ <?= number_format($total, 2, ',', '.') ?></td>
+                <td>
+                  <a href="carrinho_action.php?acao=remove&id=<?= $item['produto_id'] ?>" class="remover">
+                    <button class="x_circle" type="button"><i class="bx bx-x-circle"></i></button>
+                  </a>
+                </td>
+              </tr>
+              <?php endforeach; ?>
+            <?php endif; ?>
+          </tbody>
+        </table>
+        </form>
+      </section>
+
+      <aside>
+        <?php
+          $soma = 0;
+          foreach ($itens as $it) {
+              $soma += (float)$it['preco_produto'] * (int)$it['quantidade'];
+          }
+        ?>
+        <h3>Resumo da compra</h3>
+        <p>Total: R$ <?= number_format($soma, 2, ',', '.') ?></p>
+
+        <form action="finalizar_compra.php" method="post">
+          <input type="hidden" name="confirm" value="1" />
+          <button type="submit" id="comprar">Finalizar compra</button>
+        </form>
+      </aside>
+    </div>
+  </main>
+
+  <script>
+    // Pequeno script para manter controles visuais (não necessário para lógica)
+    document.querySelectorAll('.remover').forEach(a => {
+      a.addEventListener('click', (e) => {
+        // deixa o link funcionar normalmente
+      });
+    });
+  </script>
+</body>
+</html>

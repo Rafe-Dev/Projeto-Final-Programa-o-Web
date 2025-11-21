@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -9,15 +13,15 @@
 </head>
 
 <body>
-    <form action="#" method="post">
+    <form action="validar_login.php" method="post">
         <fieldset>
             <legend>Insira os seus dados:</legend>
             
-            <label for="fname">Nome de usuario:</label>
-            <input type="text" id="fname" name="fname" required />
+            <label for="fname">Nome de usuário:</label>
+            <input type="text" id="fname" name="usuario" required />
             
             <label for="password">Sua senha:</label>
-            <input type="password" id="password" name="password" required/>
+            <input type="password" id="password" name="senha" required/>
             
             <input type="submit" value="login" />
         </fieldset>
