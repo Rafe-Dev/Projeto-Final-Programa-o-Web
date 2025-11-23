@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de contatos</title>
-    <link rel="stylesheet" href="../css/contatos.css">
+    <link rel="stylesheet" href="css/contatos.css">
 </head>
 <body>
      <header>
      <div class="center">
             <div class="logo">
-                <img src="imagens/logo1.png" width="70px" alt="Logo da loja">
+                <img src="../imagens/logo1.png" width="70px" alt="Logo da loja">
                    <h1>Página de contatos</h1>
 
 </div>
