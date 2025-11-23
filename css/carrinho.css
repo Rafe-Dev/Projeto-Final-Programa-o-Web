@@ -1,0 +1,140 @@
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      padding: 15px 20px;
+      background: linear-gradient(to right, #001538, #2575fc);
+      color: white;
+      flex-wrap: wrap;
+    }
+
+    .logo img {
+      width: 70px;
+      border-radius: 10px;
+    }
+
+    span {
+      flex: 1;
+      text-align: center;
+      font-size: 26px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+    }
+
+    .bx:hover {
+      color: rgba(255, 255, 255, 0.566);
+      transition: 0.3s ease;
+    }
+
+    .carrinho {
+      display: flex;
+      flex-direction: row;
+      padding: 8px;
+      gap: 20px;
+      flex-wrap: wrap;
+      color: white;
+    }
+
+    section,
+    aside {
+      flex: 1;
+      min-width: 300px;
+      padding: 15px;
+      border-radius: 10px;
+      background: linear-gradient(to bottom, #001538, #2575fc);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th {
+      text-align: left;
+      padding: 10px;
+      color: white;
+      text-transform: uppercase;
+    }
+
+    td {
+      padding: 20px 10px;
+      border-top: 3px solid #999999;
+    }
+
+    .pimagem img {
+      width: 90px;
+      border-radius: 7px;
+    }
+
+    .produto {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      font-size: 20px;
+    }
+
+    .qnt {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .qnt button,
+    #comprar {
+      background-color: #2575fc;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .qnt button:hover,
+    #comprar:hover {
+      background-color: #1a5fd6;
+    }
+
+    .x_circle {
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: #ff4c4c;
+      font-size: 20px;
+    }
+
+    #comprar {
+      margin-top: 10px;
+      width: 100%;
+      padding: 10px 15px;
+      font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .produto {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .carrinho {
+        flex-direction: column;
+      }
+    }

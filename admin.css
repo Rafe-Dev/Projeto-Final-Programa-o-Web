@@ -1,0 +1,11 @@
+.title{
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+.btn-group{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 20px;
+}
