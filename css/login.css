@@ -5,82 +5,116 @@
     padding: 0;
 }
 
+
 body {
     height: 100vh;
-    background: linear-gradient(to right, #001538 , #2575fc,  #001538);
+    background: 
+        linear-gradient(to right, rgba(0, 21, 56, 0.8), rgba(37, 117, 252, 0.6), rgba(0, 21, 56, 0.8)),
+        url("https://thumbs.dreamstime.com/b/fundo-immersive-da-relação-tela-virtual-o-fez-de-muitas-telas-virtuais-com-imagens-do-negócio-nelas-conceito-internet-e-ol-151079686.jpg") no-repeat center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 }
 
+/* Formulário com efeito vidro leve */
 form {
-    background-color: rgba(0, 0, 0, 0.459);
+    background: rgba(0, 0, 0, 0.45);
     padding: 40px 30px;
     border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.55);
     width: 100%;
     max-width: 400px;
+    animation: fadeIn 0.6s ease forwards;
 }
 
+/* Remove borda do fieldset */
 fieldset {
     border: none;
 }
 
 legend {
-    font-size: 1.5em;
+    font-size: 1.7em;
     font-weight: bold;
-    color: rgb(255, 255, 255);
-    margin-bottom: 20px;
+    color: #ffffff;
+    margin-bottom: 15px;
     text-align: center;
+    letter-spacing: 1px;
+    text-shadow: 0 0 12px #2575fc;
 }
 
+/* Rótulos */
 label {
     display: block;
-    margin: 15px;
+    margin: 15px 0 5px;
     font-size: 1em;
-    color: #444;
+    color: white;
+    letter-spacing: 0.5px;
 }
 
+/* Campos */
 input[type="text"],
 input[type="password"] {
     width: 100%;
     padding: 12px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
+    margin-top: 3px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
     border-radius: 8px;
     font-size: 1em;
-    transition: border-color 0.3s, box-shadow 0.3s;
-    box-shadow: 0 0 10px white;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.05);
     color: #ffffff;
-    background-color: transparent;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
 
 input[type="text"]:focus,
 input[type="password"]:focus {
     border-color: #2575fc;
-    box-shadow: 0 0 12px #2575fc;
+    box-shadow: 0 0 14px #2575fc;
     outline: none;
 }
+
 
 input[type="submit"] {
     width: 100%;
     padding: 12px;
-    margin-top: 20px;
-    background-color: transparent;
+    margin-top: 22px;
+    background: linear-gradient(to right, #2575fc, #1a5ad2);
     color: #ffffff;
     border: none;
     border-radius: 8px;
     font-size: 1em;
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    box-shadow: 0 0 10px white;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 14px rgba(255, 255, 255, 0.25);
 }
 
 input[type="submit"]:hover {
-    background-color: #1a5ad2;
+    transform: scale(1.03);
+    box-shadow: 0 0 20px #2575fc;
 }
 
-label {
-    color: white;
+input[type="submit"]:active {
+    transform: scale(0.98);
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
