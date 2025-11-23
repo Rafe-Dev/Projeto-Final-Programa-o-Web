@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de contatos</title>
-    <link rel="stylesheet" href="css/contatos.css">
+    <link rel="stylesheet" href="../css/contatos.css">
 </head>
 <body>
      <header>
@@ -15,7 +15,7 @@
 
 </div>
         <nav class="menu">
-        <a href="projeto.html"><span class="material-symbols-outlined">home</span></a>
+        <a href="../projeto.html"><span class="material-symbols-outlined">home</span></a>
         </nav>     
 </div>
           
