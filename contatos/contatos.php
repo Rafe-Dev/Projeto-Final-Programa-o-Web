@@ -16,7 +16,7 @@
 </div>
         <nav class="menu">
         <a href="projeto.html"><span class="material-symbols-outlined">home</span></a>
-        <h1>Página de contatos</h1>
+        </nav>     
 </div>
           
     </header>
