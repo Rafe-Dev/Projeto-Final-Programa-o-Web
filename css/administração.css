@@ -31,26 +31,10 @@ header {
     gap: 10px;
 }
 
-.logo img {
-    border-radius: 10px;
-}
-
-.fundo {
-    display: flex;
-    justify-content: flex-end; 
-    align-items: center;       
-    height: calc(100vh - 100px); 
-    background-image: url("../contatos/imagens/fundo\ de\ redes.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.contato {
-    width: 40%; 
-    background-color: rgba(241, 236, 236, 0.938); 
-    padding: 30px;
-    color: rgb(139, 41, 41);
-    border-radius: 10px;
+.menu {
+    width: 50%;
+    text-align: right;
+    color: rgb(177, 12, 12);
+    background-color: aliceblue;
 }
 

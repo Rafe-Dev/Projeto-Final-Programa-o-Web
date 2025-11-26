@@ -11,10 +11,13 @@
      <div class="center">
             <div class="logo">
                 <img src="../imagens/logo1.png" width="70px" alt="Logo da loja">
-                <h1>Página de contatos</h1>
-            </div>
-            <a href="../projeto.html">HOME</a>
-    </div>
+                   <h1>Página de contatos</h1>
+
+</div>
+        <nav class="menu">
+        <a href="../projeto.html"><span class="material-symbols-outlined">home</span></a>
+        </nav>     
+</div>
           
     </header>
     <main>
