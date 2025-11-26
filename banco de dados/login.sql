@@ -1,0 +1,6 @@
+create table (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    Nome VARCHAR(100) NOT NULL,
+    EMAIL VARCHAR(100) NOT NULL,
+    senha VARCHAR(100) NOT NULL
+)
