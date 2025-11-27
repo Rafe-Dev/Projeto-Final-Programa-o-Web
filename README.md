@@ -1,6 +1,6 @@
 # Projeto-Final-Programa-o-Web
 
-🧩 Projeto — Loja de produtos eletrônicos 
+🧩 Projeto — Loja de produtos eletrônicos (LDE)
 
 
 
