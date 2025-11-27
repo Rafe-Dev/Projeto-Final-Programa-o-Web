@@ -1,40 +1,83 @@
+<?php
+$mensagem = "";
+if (isset($_GET['status'])) {
+    if ($_GET['status'] == "ok") {
+        $mensagem = "<p class='msg-sucesso'>Mensagem enviada com sucesso!</p>";
+    } elseif ($_GET['status'] == "erro") {
+        $mensagem = "<p class='msg-erro'>Erro ao enviar a mensagem.</p>";
+    }
+}
+?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de contatos</title>
-    <link rel="stylesheet" href="../css/contatos.css">
-</head>
-<body>
-     <header>
-     <div class="center">
-            <div class="logo">
-                <img src="../imagens/logo1.png" width="70px" alt="Logo da loja">
-                   <h1>Página de contatos</h1>
+    <title>Contato - LDE</title>
+    <link rel="stylesheet" href="../css/contato.css">
 
-</div>
-        <nav class="menu">
-        <a href="../projeto.html"><span class="material-symbols-outlined">home</span></a>
-        </nav>     
-</div>
-          
-    </header>
-    <main>
-    <div class="fundo">
-        <div class="contato">
-            <p>
-            <h2>Entre em Contato</h2>
-            </p>
-            <br>
-            <p>TELEFONE: (81)98161-2239</p>
-            <br>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@400;700" />
+</head>
+
+<body>
+
+    <header>
+        <div class="center">
             
-            <a href="https://www.instagram.com/alvinholuizdeal/?next=%2F" target="_blank
-            " class="btn-instagram">INSTAGRAM: @alvinholuizdeal</a>
-           
+            <div class="logo">
+                <img src="../imagens/logo1.png" width="50" alt="Logo">
+                <h1>LDE Store</h1>
+            </div>
+
+
+            <nav class="menu">
+                <a href="../projeto.html">
+                    <span class="material-symbols-outlined">home</span>
+                    Home
+                </a>
+
+                <a href="../Sobre Nós.html">
+                    <span class="material-symbols-outlined">info</span>
+                    Sobre Nós
+                </a>
+
+                <a href="../perguntasfrequentes.html">
+                    <span class="material-symbols-outlined">support</span>
+                    Suporte
+                </a>
+            </nav>
+
         </div>
+    </header>
+
+    <h1 class="titulo-contato">Contato</h1>
+
+    <?= $mensagem ?>
+
+    <div class="form-contato">
+
+        <form action="processa_contato.php" method="POST">
+
+            <label>Nome</label>
+            <input type="text" name="nome" required>
+
+            <label>Email</label>
+            <input type="email" name="email" required>
+
+            <label>Mensagem</label>
+            <textarea name="mensagem" rows="6" required></textarea>
+
+            <button type="submit" class="botao-contato">Enviar Mensagem</button>
+
+        </form>
+
     </div>
-</main>
+
+    <footer>
+        <p>© 2025 LDE STORE — Todos os direitos reservados</p>
+    </footer>
+
 </body>
+
 </html>
