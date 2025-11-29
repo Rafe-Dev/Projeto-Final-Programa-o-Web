@@ -175,21 +175,38 @@ footer {
 }
 
 .menu a {
-    color: white;
+    position: relative;
+    color: #ffffff;
     font-size: 20px;
     text-decoration: none;
     display: flex;
     align-items: center;
     gap: 6px;
-    transition: 0.3s;
     padding: 5px 8px;
-    border-radius: 6px;
+    transition: color .3s ease;
 }
 
+
 .menu a:hover {
-    transform: scale(1.08);
-    background: rgba(255, 255, 255, 0.15);
+    color: #3bb0ff;
 }
+
+
+.menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background-color: #3bb0ff;
+    transition: width .3s ease;
+}
+
+.menu a:hover::after {
+    width: 100%;
+}
+
 
 .menu a span {
     font-size: 24px;
@@ -197,8 +214,12 @@ footer {
 
 
 .menu .ativo {
-    background: rgba(255, 255, 255, 0.25);
     font-weight: bold;
+    color: #3bb0ff;
+}
+
+.menu .ativo::after {
+    width: 100%;
 }
 
 

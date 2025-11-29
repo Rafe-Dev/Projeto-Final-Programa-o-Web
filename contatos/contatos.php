@@ -14,7 +14,7 @@ if (isset($_GET['status'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato - LDE</title>
+    <title>Contato IT</title>
     <link rel="stylesheet" href="../css/contato.css">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@400;700" />
@@ -26,8 +26,8 @@ if (isset($_GET['status'])) {
         <div class="center">
             
             <div class="logo">
-                <img src="../imagens/logo1.png" width="50" alt="Logo">
-                <h1>LDE Store</h1>
+                <img src="../imagens/logoTI.png" width="120" alt="Logo">
+                <h1>Contato IT</h1>
             </div>
 
 
@@ -75,7 +75,7 @@ if (isset($_GET['status'])) {
     </div>
 
     <footer>
-        <p>© 2025 LDE STORE — Todos os direitos reservados</p>
+        <p>© 2025 IT SUPPORT — Todos os direitos reservados</p>
     </footer>
 
 </body>
