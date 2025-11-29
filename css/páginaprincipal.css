@@ -1,0 +1,139 @@
+   body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f4f4;
+            color: #333;
+        }
+
+       
+        header {
+            background: #0d6efd;
+            color: white;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+    
+        .slideshow-container {
+            position: relative;
+            height: 450px;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .slide {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            opacity: 0;
+            transition: opacity 1.5s ease-in-out;
+        }
+
+        .slide-text {
+            color: white;
+            text-shadow: 1px 1px 8px black;
+            text-align: center;
+            position: absolute;
+            bottom: 60px;
+            width: 100%;
+            padding: 0 20px;
+        }
+
+        .slide-text h2 {
+            font-size: 40px;
+            margin: 0;
+        }
+
+        .slide-text p {
+            font-size: 20px;
+        }
+
+        .active {
+            opacity: 1 !important;
+        }
+
+
+        section {
+            padding: 60px 40px;
+            text-align: center;
+        }
+        section h2 {
+            margin-bottom: 40px;
+        }
+
+        .services {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .card {
+            background: white;
+            width: 300px;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            transition: 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card h3 {
+            margin-bottom: 15px;
+        }
+
+       
+        .contact {
+            background: #fff;
+            padding: 40px;
+            max-width: 550px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .contact input, .contact textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+      
+        footer {
+            background: #0d6efd;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+       
+        .btn {
+            padding: 12px 25px;
+            background: #0d6efd;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .btn:hover {
+            background: #084298;
+        }
+
+        

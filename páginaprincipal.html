@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT SUPPORT Página Principal</title>
+    <link rel="stylesheet" href="css/páginaprincipal.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+<body>
+
+  
+    <header>
+        <h1>IT SUPPORT</h1>
+        <nav>
+                <a href="Sobre Nós.html"><span class="material-symbols-outlined">info</span></a>
+
+                <a href="../Projeto-Final-Programa-o-Web/contatos/avaliação.php"> <span class="material-symbols-outlined">message</span></a>
+
+                <a href="serviços.html"><span class="material-symbols-outlined">build_circle</span></a>
+                
+                <a href="../Projeto-Final-Programa-o-Web/contatos/avaliação.php"><span class="material-symbols-outlined">star</span></a>
+        </nav>
+    </header>
+
+    <div class="slideshow-container">
+
+        <div class="slide fade" style="background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80');">
+            <div class="slide-text">
+                <h2>Suporte Técnico de TI Profissional</h2>
+                <p>Atendimento rápido e seguro para sua empresa.</p>
+            </div>
+        </div>
+
+        <div class="slide fade" style="background-image: url('https://images.unsplash.com/photo-1527430253228-e93688616381?auto=format&fit=crop&w=1600&q=80');">
+            <div class="slide-text">
+                <h2>Especialistas em Redes e Servidores</h2>
+                <p>Infraestrutura, cabeamento e segurança de rede.</p>
+            </div>
+        </div>
+
+        <div class="slide fade" style="background-image: url('https://www.findup.com.br/wp-content/uploads/2022/08/Prancheta-1-20-7.jpg');">
+            <div class="slide-text">
+                <h2>Manutenção e Otimização</h2>
+                <p>Seu computador sempre rápido e funcionando.</p>
+            </div>
+        </div>
+
+         <div class="slide fade" style="background-image: url('https://netlogs.com.br/wp-content/uploads/2023/03/03-niveis-de-suporte-de-TI-e-suas-caracteristicas.jpg');">
+            <div class="slide-text">
+                <h2>Cliente sempre em primeiro lugar</h2>
+                <p>Atendimento ágil e de ponta com os nossos melhores profissionais.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <section id="servicos">
+        <h2>Nosso site</h2>
+        <div class="services">
+            <div class="card">
+                <h3>Equipe de ponta</h3>
+                <p>Nós trabalhamos com suporte técnico de TI a mais de 10 anos no mercado com referência por diversas empresas.</p>
+            </div>
+
+            <div class="card">
+                <h3>Suporte Remoto</h3>
+                <p>Atendimento ágil via acesso remoto para resolver problemas rapidamente.</p>
+            </div>
+
+            <div class="card">
+                <h3>Redes e Servidores</h3>
+                <p>Configuração de redes, servidores, segurança e infraestrutura completa.</p>
+            </div>
+         </div>
+        
+         
+    </section>
+
+    
+
+   
+    <footer>
+        © 2025 IT SUPPORT - Suporte Técnico de TI • Todos os direitos reservados
+    </footer>
+
+
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelectorAll(".slide");
+
+        function showSlides() {
+            slides.forEach(slide => slide.classList.remove("active"));
+
+            slideIndex++;
+            if (slideIndex > slides.length) slideIndex = 1;
+
+            slides[slideIndex - 1].classList.add("active");
+
+            setTimeout(showSlides, 7000);
+        }
+
+        showSlides();
+    </script>
+
+</body>
+</html>
