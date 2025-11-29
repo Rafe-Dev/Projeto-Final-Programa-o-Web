@@ -57,7 +57,7 @@ if (isset($_GET['status'])) {
 
     <div class="form-contato">
 
-        <form action="processa_contato.php" method="POST">
+        <form action="../valida_contato.php" method="POST">
 
             <label>Nome</label>
             <input type="text" name="nome" required>
