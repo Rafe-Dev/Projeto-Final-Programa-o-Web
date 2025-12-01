@@ -5,7 +5,7 @@
     padding: 0;
 }
 
-/* ======= FUNDO ======= */
+
 body {
     height: 100vh;
 
@@ -29,7 +29,7 @@ body {
     padding: 20px;
 }
 
-/* ======= FORM PRINCIPAL ======= */
+
 form {
     background: rgba(0, 0, 0, 0.45);
     padding: 40px 30px;
@@ -66,7 +66,7 @@ form {
     }
 }
 
-/* ======= FIELDSET ======= */
+
 fieldset {
     border: none;
 }
@@ -89,7 +89,7 @@ h2 {
     font-weight: 500;
 }
 
-/* ======= LABELS ======= */
+
 label {
     display: block;
     margin: 15px 0 5px;
@@ -98,7 +98,7 @@ label {
     letter-spacing: 0.5px;
 }
 
-/* ======= CAMPOS ======= */
+
 input[type="text"],
 input[type="email"],
 input[type="password"] {
@@ -126,7 +126,7 @@ input:focus {
     outline: none;
 }
 
-/* ======= BOTÃO ======= */
+
 input[type="submit"] {
     width: 100%;
     padding: 12px;
@@ -154,7 +154,7 @@ input[type="submit"]:active {
     transform: scale(0.98);
 }
 
-/* Animação de entrada */
+
 @keyframes fadeIn {
     from {
         opacity: 0;
