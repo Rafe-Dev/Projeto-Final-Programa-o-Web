@@ -17,7 +17,9 @@
             
             <nav class="menu">
                 <a href="listausuarios.php"><span class="material-symbols-outlined">LISTA DE USUÁRIOS</span></a>
-                <a href="produtoscadastro.php"><span class="material-symbols-outlined">PRODUTOS CADASTRADOS</span></a>
+            </nav>
+            <nav class="menu">
+                <a href="listar_duvidas.php"><span class="material-symbols-outlined">Dúvidas dos USUÁRIOS</span></a>
             </nav>
     </header>
 </body>
