@@ -1,26 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../css/administração.css" rel="stylesheet">
-  
-    <title>administração</title>
+    <title>Painel Administrativo</title>
+    <link rel="stylesheet" href="../css/administração.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-     <div class="center">
-            <div class="logo">
-                <img src="../imagens/logo1.png" width="70px" alt="Logo da loja">
-                <h1>Página administrativa</h1>
-            </div>
-            
-            <nav class="menu">
-                <a href="listausuarios.php"><span class="material-symbols-outlined">LISTA DE USUÁRIOS</span></a>
-            </nav>
-            <nav class="menu">
-                <a href="listar_duvidas.php"><span class="material-symbols-outlined">Dúvidas dos USUÁRIOS</span></a>
-            </nav>
+
+    <header class="topo">
+        <h1>Painel Administrativo</h1>
     </header>
+
+    <main class="container">
+
+        <a class="card" href="listausuarios.php">
+            <h2>Lista de Usuários</h2>
+        </a>
+
+        <a class="card" href="listar_duvidas.php">
+            <h2>Dúvidas dos Usuários</h2>
+        </a>
+
+    </main>
+
 </body>
 </html>

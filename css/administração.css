@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -6,35 +7,63 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #f5f7fa;
-    color: hsl(218, 100%, 11%);
+    background: #f3f4f6;
+    color: #222;
 }
 
-header {
-    background: linear-gradient(to right, #001538, #2575fc);
-    padding: 15px 30px;
+
+.topo {
+    background: linear-gradient(135deg, #4c6ef5, #556cd6);
     color: white;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    padding: 50px 20px;
+    text-align: center;
 }
 
-.center {
-    max-width: 1200px;
-    margin: auto;
+.topo h1 {
+    font-size: 2.3rem;
+    font-weight: 600;
+}
+
+.topo p {
+    margin-top: 8px;
+    font-size: 1.05rem;
+    opacity: 0.9;
+}
+
+
+.container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 40px 20px;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.card {
+    background: white;
+    padding: 25px;
+    width: 300px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #222;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: all 0.2s ease-in-out;
+    border-left: 5px solid #4c6ef5;
 }
 
-.menu {
-    width: 50%;
-    text-align: right;
-    color: rgb(177, 12, 12);
-    background-color: aliceblue;
+.card h2 {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+    font-weight: 600;
 }
 
+.card p {
+    font-size: 0.95rem;
+    opacity: 0.75;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 25px rgba(0,0,0,0.16);
+    border-left-color: #364fc7;
+}
