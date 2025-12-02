@@ -1,4 +1,4 @@
-@⁨Lopeszx⁩ 🧩 Projeto — Suporte Técnico para dúvidas e problemas de TI (IT Support)
+🧩 Projeto — Suporte Técnico para dúvidas e problemas de TI (IT Support)
 
 Integrantes da equipe:
 
