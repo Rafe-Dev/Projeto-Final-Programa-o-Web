@@ -2,13 +2,13 @@
 
 Integrantes da equipe:
 
-Álvaro Luiz
+- Álvaro Luiz
 
-Rafael Chagas
+- Rafael Chagas
 
-Lucas Lopes Vasconcelos
+- Lucas Lopes Vasconcelos
 
-Guilherme Mendes Lopes
+- Guilherme Mendes Lopes
 
 NOSSOS CRUDS:
 
