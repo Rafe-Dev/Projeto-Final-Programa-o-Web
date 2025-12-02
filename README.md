@@ -1,25 +1,19 @@
-# Projeto-Final-Programa-o-Web
+@⁨Lopeszx⁩ 🧩 Projeto — Suporte Técnico para dúvidas e problemas de TI (IT Support)
 
-🧩 Projeto — Loja de produtos eletrônicos 
+Integrantes da equipe:
 
-<img width="172" height="20" alt="image" src="https://github.com/user-attachments/assets/51d90e02-9318-4ba9-8581-2b985d6dbc97" />
+Álvaro Luiz
 
+Rafael Chagas
 
+Lucas Lopes Vasconcelos
 
-INTEGRANTES DA EQUIPE:
+Guilherme Mendes Lopes
 
-- ALVARO LUIZ
-- RAFAEL CHAGAS
-- LUCAS LOPES
-- GUILHERME MENDES
+NOSSOS CRUDS:
 
+- Login de usuários contendo nome, e-mail e senha.
 
-O TEMA DO NOSSO CRUD:
+- Página de dúvidas, onde o cliente informa seu nome, e-mail e descreve sua dúvida. Esses dados serão enviados diretamente para o nosso WhatsApp.
 
-CLIENTES CADASTRADOS NA PÁGINA PRINCIPAL;
-
-LISTA DE CLIENTES CADASTRADOS: Com alteração e exclusão;
-
-PAINEL ADMINISTRATIVO PARA ADIÇÃO DE NOVOS PRODUTOS E MANIPULAÇÃO DOS CLIENTES;
-
-ADIÇÃO DE CONTATO E SOBRE NÓS;
+- Página de avaliação, na qual o cliente poderá enviar seu feedback sobre o site, necessitando que o mesmo faça preencha os campos de nome, telefone e o feedback.
