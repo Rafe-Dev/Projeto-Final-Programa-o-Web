@@ -1,23 +1,19 @@
-# Projeto-Final-Programa-o-Web
+@⁨Lopeszx⁩ 🧩 Projeto — Suporte Técnico para dúvidas e problemas de TI (IT Support)
 
-🧩 Projeto — SUPORTE TÉCNICO PARA DÚVIDAS DE PROBLEMAS DE TI (IT SUPPORT)
+Integrantes da equipe:
 
+Álvaro Luiz
 
+Rafael Chagas
 
-INTEGRANTES DA EQUIPE:
+Lucas Lopes Vasconcelos
 
-- ALVARO LUIZ
-- RAFAEL CHAGAS
-- LUCAS LOPES VASCONCELOS
-- GUILHERME MENDES LOPES.
+Guilherme Mendes Lopes
 
+NOSSOS CRUDS:
 
-O TEMA DO NOSSO CRUD:
+- Login de usuários contendo nome, e-mail e senha.
 
-LOGIN DE USUÁRIOS COM NOME, EMAIL, E SENHA 
-PÁGINA DE DÚVIDAS, ONDE O CLIENTE COLOCA SEU NOME, EMAIL E QUAL A SUA DÚVIDA E ESSES DADOS VÃO CHEGAR NO NOSSO WHATSAPP
-PÁGINA DE AVALIAÇÃO ONDE O CLIENTE PODE ENVIAR SEU FEEDBACK SOBRE A PÁGINA ATUAL
+- Página de dúvidas, onde o cliente informa seu nome, e-mail e descreve sua dúvida. Esses dados serão enviados diretamente para o nosso WhatsApp.
 
-
-
-
+- Página de avaliação, na qual o cliente poderá enviar seu feedback sobre o site, necessitando que o mesmo faça preencha os campos de nome, telefone e o feedback.
