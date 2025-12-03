@@ -6,7 +6,7 @@ Integrantes da equipe:
 
 - Rafael Chagas
 
-- Lucas Lopes Vasconcelos
+- Lucas Lopes Vasconcelos Vieira Siqueira
 
 - Guilherme Mendes Lopes
 
